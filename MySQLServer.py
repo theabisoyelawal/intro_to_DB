@@ -10,10 +10,8 @@ try:
     cursor = connection.cursor()
     cursor.execute("CREATE DATABASE alxbookstore")
     print("Database 'alxbookstore' created successfully!")
-
 except Error as e:
-    print(f"Error: {e}")
-
+    print("Error:", e)
 finally:
     if 'cursor' in locals():
         cursor.close()
