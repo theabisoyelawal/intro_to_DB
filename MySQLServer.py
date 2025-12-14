@@ -8,10 +8,10 @@ try:
         password="Antaidada@2"
     )
     cursor = connection.cursor()
-    cursor.execute("CREATE DATABASE alxbookstore")
-    print("Database 'alxbookstore' created successfully!")
+    cursor.execute("CREATE DATABASE alx_book_store")
+    print("Database 'alx_book_store' created successfully!")
 except Error as e:
-    print("Error:", e)
+    print(e)
 finally:
     if 'cursor' in locals():
         cursor.close()
